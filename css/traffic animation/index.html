@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: content-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            padding: 12px 18px 12px 22px;
+            background-color: #111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .main-link .arrow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            background-color: #fff;
+            color: #111;
+            border-radius: 50%;
+            transition: 0.3s ease;
+        }
+
+        .main-link:hover {
+            transition: translateY(-3px);
+        }
+
+        .main-link:hover .arrow {
+            transform: translateX(5px);
+        }
+
+        .gif-grid {
+            display: grid;
+            grid-template-rows: 300px 300px;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 15px;
+            max-width: 850px;
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .gif-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            min-height: 0;
+        }
+
+        .gif-card.featured {
+            grid-row: 1/3;
+        }
+
+        .gif-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gif-hover {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .gif-card:hover .gif-hover {
+            opacity: 1;
+        }
+
+        .gif-card:hover .gif-main {
+            opacity: 0;
+        }
+
+        .hover-text {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            padding: 6px 12px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .gif-card:hover .hover-text {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="main.html" class="main-link">
+        <span>Back to Main Project - Traffic Animation</span>
+        <span class="arrow">↗</span>
+    </a>
+
+    <div class="gif-grid">
+        <div class="gif-card featured">
+            <img class="gif-main" src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eDU0ZDQwanE4YjZxNWlxbng4MDJmYzFod25zMjYxdDF4aXBobWlrcSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/3oxRmD9a5pLTOOLigM/giphy.gif" alt="GIF1">
+            <img class="gif-hover" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3hxZnR2MWEzcGxqa2p6dmJwdDByaXpuanZ4Ymdwb28wa21kb3pkbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4lvBiuwmdHSqA/giphy.gif" alt="GIF4">
+
+            <span class="hover-text">Hover & see 👀</span>
+        </div>
+
+        <div class="gif-card">
+            <img class="gif-main" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQxdDFmd3oyc3J3aHZjY3ZrYjY5MHF5Y2R3ZWF5NTZoNHl2d3BodCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/SGn5JVUaufbCLiGEiH/giphy.gif" alt="GIF2">
+            <img class="gif-hover" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3hxZnR2MWEzcGxqa2p6dmJwdDByaXpuanZ4Ymdwb28wa21kb3pkbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ImxXWVDp8sfBe/giphy.gif" alt="GIF5">
+
+            <span class="hover-text">Hover & see 👀</span>
+        </div>
+
+        <div class="gif-card">
+            <img class="gif-main" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQxdDFmd3oyc3J3aHZjY3ZrYjY5MHF5Y2R3ZWF5NTZoNHl2d3BodCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/l0Iyq18S2AwqtGciQ/giphy.gif" alt="GIF3">
+            <img class="gif-hover" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3hxZnR2MWEzcGxqa2p6dmJwdDByaXpuanZ4Ymdwb28wa21kb3pkbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Wk5YYh2evQnNS/giphy.gif" alt="GIF6">
+
+            <span class="hover-text">Hover & see 👀</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-container { position: relative; }
+
+.sky-img {
+    width: 100vw;
+    height: 30vh;
+    position: fixed
+}
+
+.aeroplane {  position: absolute;   right: 2000px;  top: 0; }
+
+.helicopter { position: absolute;   top: 10px;  right: 2000px; }
+
+.bird-1 { position: absolute;   top: 20px;  left: 80px; }
+
+.bird-2 { position: absolute;  top: 90px;   right: 90px; }
+
+.houses {
+    width: 95vw;
+    height: 25vh;
+    position: absolute;
+    right: 35px;
+    top: 100px;
+}
+
+.grass {
+    background-color: rgb(100, 126, 100);
+    background-image: url('images/grass.jpg');
+    height: 30px;
+    width: 100vw;
+    position: absolute;
+    bottom: 650px;
+}
+
+.walk-way {
+    height: 50px;
+    background-color: #716C8A;
+    background-image: url(images/interlock.jpg);
+    width: 100vw;
+    position: absolute;
+    bottom: 600px;
+}
+
+.signs {
+    position: relative;
+    background-color: #716C8A;
+    background-image: url(images/grass-bg.jpg);
+    height: 50px;
+}
+
+.light-1 {
+    position: absolute;
+    left: 200px;
+}
+
+.light-2 {
+    position: absolute;
+    left: 800px;
+}
+
+.light-3 {
+    position: absolute;
+    right: 200px;
+}
+
+.way-1 {
+    position: absolute;
+    left: 300px
+}
+
+.way-2 {
+    position: absolute;
+    right: 300px
+}
+
+.ped-boy { position: absolute; right: 2100px;  bottom: 25px; }
+
+.ped-woman {  position: absolute;  right: 2100px;  bottom: 10px; }
+
+.road { position: relative;   top: 410px; }
+
+.road-1, .road-2 { width: 100vw;  height: 260px; }
+
+.right-lane, .left-lane {   position: relative; }
+
+.taxi-1a { position: absolute;  top: 20px; right: 2000px; }
+
+.taxi-1b { position: absolute; top: 130px; right: 2200px;  }
+
+.taxi-1c { position: absolute; top: 0px;  right: 2400px; }
+
+.taxi-2a { position: absolute; top: 40px;  right: 1800px;  }
+
+.taxi-2b { position: absolute; top: 30px;  right: 1500px;  }
+
+.taxi-2c { position: absolute; top: 100px; right: 2000px;  }
+
+.trailer-a { position: absolute; top: 100px; right: 2000px; }
+
+.trailer-b { position: absolute; top: 30px; right: 2400px; }
+
+.truck-a { position: absolute; top: 80px; right: 1800px; }
+
+.truck-b { position: absolute; top: 0px; right: 2200px; }
+
+.car { position: absolute; top: 170px;  right: 2000px;  }
+
+.bike-a { position: absolute; top: -40px;  right: 2000px; }
+
+.bike-b { position: absolute; top: -40px;  right: 2350px; }
+
+.bicycle { position: absolute; top: 170px;  right: 1800px;  }
+
+
+/******************* ANIMATION ****************************/
+
+.car {
+    animation: car 2s linear -2s infinite reverse none;
+}
+
+.aeroplane {
+    animation: aeroplane 2s linear -2s infinite normal;
+}
+
+.taxi-1 {
+    animation: taxi-1 3s linear 0s infinite normal;
+}
+
+.taxi-2 {
+    animation: taxi-2 3s linear 0s infinite reverse;
+}
+
+.helicopter {
+    animation: helicopter 3s linear 0.5s infinite normal none;
+}
+
+.bike {
+    animation: bike 7s linear 0s infinite normal both;
+}
+
+.trailer {
+    animation: trailer 9s linear -2s infinite normal none;
+}
+
+.truck {
+    animation: truck 9s linear -2s infinite reverse none;
+}
+
+.bicycle {
+    animation: bicycle 10s linear 2s infinite reverse;
+}
+
+.ped-boy {
+    animation: ped-boy 13s linear 2s infinite normal none;
+}
+
+.ped-woman {
+    animation: ped-woman 10s linear 1s infinite reverse none;
+}
+
+/***************FRAMES***************/
+
+@keyframes car {
+    0% {
+        transform: translate(2200px);
+    }
+}
+
+@keyframes aeroplane {
+    0% {
+        transform: translate(2000px);
+    }
+}
+
+@keyframes helicopter {
+    0% {
+        transform: translate(2000px);
+    }
+}
+
+@keyframes taxi-1 {
+    0% {
+        transform: translate(2800px);
+    }
+}
+
+@keyframes taxi-2 {
+    0% {
+        transform: translate(2200px);
+    }
+}
+
+@keyframes bike {
+    0% {
+        transform: translate(2500px);
+    }
+}
+
+@keyframes bicycle {
+    0% {
+        transform: translate(2000px);
+    }
+}
+
+@keyframes trailer {
+    0% {
+        transform: translate(2500px);
+    }
+}
+
+@keyframes truck {
+    0% {
+        transform: translate(2500px);
+    }
+}
+
+@keyframes ped-boy {
+    0% {
+        transform: translate(2200px);
+    }
+}
+
+@keyframes ped-woman {
+    0% {
+        transform: translate(2200px);
+    }
+}
