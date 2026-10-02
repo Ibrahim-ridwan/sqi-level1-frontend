@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canva - clone</title>
+
+  <!-- Styles stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icon -->
+  <link rel="icon" href="images/canva-logo.png">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/20075c944a.js" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section id="title">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg p-lg-2 navbar-dark" data-bs-theme="light">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+
+        <!-- 1. LOGO (Left side) -->
+        <a class="navbar-brand me-0" href="#">
+          <img src="images/Canva Wordmark.png" alt="Canva" width="100px">
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredNav"
+          aria-controls="navbarCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 2. NAV LINKS (Centered) & 3. BUTTON (Right side) -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCenteredNav">
+
+          <!-- This empty div acts as a spacer for perfect centering calculations on desktop -->
+          <div class="d-none d-md-block" style="width: 70px;"></div>
+
+          <!-- Centered Menu Links -->
+          <ul class="navbar-nav mx-auto mb-2 m-lg-2 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+
+          <!-- Right Side Button -->
+          <div class="d-flex gap-2 justify-content-center">
+            <button type="button" class="btn btn-outline-light">Sign up</button>
+            <button type="button" class="btn btn-light">Log in</button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="title-info">
+      <h1>What will you design today?</h1>
+      <p>Make AI-powered social posts, videos, presentations, and more with Canva.</p>
+      <button class="btn btn-light btn-lg title-button">Start designing</button>
+    </div>
+
+    <div class="text-center title-image-level">
+      <div class="row justify-content-md-evenly g-0">
+        <div class="col-md-2 div-image">
+          <img class="title-image img-1" src="images/imgi_1_floating-elements-font.png" alt="">
+        </div>
+        <div class="col-md-2 div-image">
+          <img class="title-image img-2" src="images/imgi_2_floating-elements-ai-image.png" alt="">
+        </div>
+        <div class="col-md-2 div-image">
+          <img class="title-image img-3" src="images/imgi_3_floating-elements-social.png" alt="">
+        </div>
+        <div class="col-md-2 div-image d-none d-sm-block">
+          <img class="title-image" src="images/imgi_4_floating-elements-video.png" alt="">
+        </div>
+      </div>
+
+      <div class="row justify-content-md-around g-0">
+        <div class="col-md-2 div-image">
+          <img class="title-image img-4" src="images/imgi_5_floating-elements-color-wheel.png" alt="">
+        </div>
+        <div class="col-md-2 div-image">
+          <img class="title-image img-5" src="images/imgi_6_floating-elements-sticky.png" alt="">
+        </div>
+        <div class="col-md-2 div-image">
+          <img class="title-image img-6" src="images/imgi_7_floating-elements-canva-ai.png" alt="">
+        </div>
+        <div class="col-md-2 div-image d-none d-sm-block">
+          <img class="title-image" src="images/imgi_8_floating-elements-background-remover.png" alt="">
+        </div>
+        <div class="col-md-2 div-image d-none d-sm-block">
+          <img class="title-image" src="images/imgi_9_floating-elements-code.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="tools">
+
+    <div class="tools-info">
+      <h2>Tools to power your best work</h2>
+
+      <div class="tools-nav">
+        <button class="btn btn-lg tools-nav-ai">
+          <div class="tools-nav-content">
+            <img class="tools-nav-icon" src="images/sparkle.svg" alt="" width="30px">
+            <span>AI</span>
+          </div>
+        </button>
+        <button class="btn btn-lg tools-nav-btn">
+          <div class="tools-nav-content">
+            <img class="tools-nav-icon" src="images/download (4).svg" alt="">
+            <span>Presentation</span>
+            </div>
+        </button>
+        <button class="btn btn-lg tools-nav-btn">
+          <div class="tools-nav-content">
+            <img class="tools-nav-icon" src="images/download (3).svg" alt="">
+            <span>Social</span>
+          </div>
+        </button>
+        <button class="btn btn-lg tools-nav-btn">
+          <div class="tools-nav-content">
+            <img class="tools-nav-icon" src="images/download (2).svg" alt="">
+            <span>Video</span>
+          </div>
+        </button>
+      </div>
+      
+    </div>
+
+    <!-- carousel, with grid-layout, and cards -->
+    <div class="carousel-container">
+      <div id="tools-carousel" class="carousel slide carousel-primary data-bs-touch=" true"">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row g-2 g-lg-3">
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-2 tools-card1">
+                  <div class="card-body">
+                    <h5 class="card-title">Turn your image into an editable layout with Magic Layers</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Magic Layers</a>
+                  </div>
+                  <img src="images/magic-layer.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card p-3 tools-card2">
+                  <div class="card-body">
+                    <h5 class="card-title">Clean up photos with Magic Eraser</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Magic Eraser</a>
+                  </div>
+                  <img src="images/magic-eraser.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card tools-card3">
+                  <div class="card-body">
+                    <h5 class="card-title">Remove image and video backgrounds in one click</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Background Remover</a>
+                  </div>
+                  <img src="images/bg-remover.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-3 tools-card4">
+                  <div class="card-body">
+                    <h5 class="card-title">Elevate your writing with Magic Write</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Magic Write</a>
+                  </div>
+                  <img src="images/magic-write.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-2 g-lg-3">
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-2 tools-card5">
+                  <div class="card-body">
+                    <h5 class="card-title">Create presentations that engage and inspire</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Presentations</a>
+                  </div>
+                  <img src="images/presentation.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card p-3 tools-card6">
+                  <div class="card-body">
+                    <h5 class="card-title">Find your perfect presentation template</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore templates</a>
+                  </div>
+                  <img src="images/presentation-template.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card p-3 tools-card7">
+                  <div class="card-body">
+                    <h5 class="card-title">Stay on-brand with Brand Kit</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Brand Kit</a>
+                  </div>
+                  <img src="images/presentation-brand.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-3 tools-card8">
+                  <div class="card-body">
+                    <h5 class="card-title">Bring your presentations to life with animations</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore animations</a>
+                  </div>
+                  <img src="images/presentation-animation.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-2 g-lg-3">
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-2 tools-card9">
+                  <div class="card-body">
+                    <h5 class="card-title">Effortlessly create your next video with trending templates</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore the collection</a>
+                  </div>
+                  <img src="images/social-template.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card p-3 tools-card10">
+                  <div class="card-body">
+                    <h5 class="card-title">Remove image and video backgrounds in one click</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Background Remover</a>
+                  </div>
+                  <img src="images/bg-remover.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card p-3 tools-card11">
+                  <div class="card-body">
+                    <h5 class="card-title">Sharpen any photo with Image Upscale</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Image Upscale</a>
+                  </div>
+                  <img src="images/social-upscale.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-3 tools-card12">
+                  <div class="card-body">
+                    <h5 class="card-title">Resize designs instantly for any channel</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Magic Resize</a>
+                  </div>
+                  <img src="images/social-resize.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-2 g-lg-3">
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-2 tools-card13">
+                  <div class="card-body">
+                    <h5 class="card-title">Effortlessly turn clips to content with out video editor</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Video Editor</a>
+                  </div>
+                  <img src="images/video-editor.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card p-3 tools-card14">
+                  <div class="card-body">
+                    <h5 class="card-title">All your video templates in one place</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore video templates</a>
+                  </div>
+                  <img src="images/video-template.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="card tools-card15">
+                  <div class="card-body">
+                    <h5 class="card-title">Studio quality stock videos for every project</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore stock videos</a>
+                  </div>
+                  <img src="images/video-stock.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6">
+                <div class="card p-3 tools-card16">
+                  <div class="card-body">
+                    <h5 class="card-title">Boost engagement with AI-powered captions</h5>
+                    <a href="#" class="btn btn-light tools-button">Explore Captions</a>
+                  </div>
+                  <img src="images/video-caption.png" class="card-img-bottom tools-image" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev carousel-button carousel-button-prev" type="button"
+          data-bs-target="#tools-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next carousel-button carousel-button-next" type="button"
+          data-bs-target="#tools-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="features">
+    <h2 class="feature-heading">All the tools. All in one place.</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card p-4 feature-card1">
+          <div class="card-body feature-info">
+            <h3 class="card-title">Meet the Visual Suite</h3>
+            <p>Your entire workflow in one place for seamless creation and collaboration, powered by AI.</p>
+            <a href="#" class="btn btn-light tools-button feature-btn">Explore Visual Suite</a>
+          </div>
+          <img src="images/visual-suite.png" class="card-img-bottom feature-img" alt="...">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-4 feature-card2">
+          <div class="card-body feature-info">
+            <h3 class="card-title">Present with impact</h3>
+            <p>Re-imagine presentations with cinematic visuals, smart collaboration, and AI-powered tools.</p>
+            <a href="#" class="btn btn-light tools-button feature-btn">Try Presentations</a>
+          </div>
+          <img src="images/creative-pitch.png" class="card-img-bottom feature-img" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="templates">
+    <div class="template-heading">
+      <h2>Templates for absolutely anything</h2>
+      <button class="btn btn-lg btn-primary template-btn template-btn1">Start designing for free</button>
+      <button class="btn btn-lg btn-outline-dark template-btn">Browse all templates</button>
+    </div>
+
+
+    <div class="canva-viewport py-5">
+
+      <div class="unified-scroll-viewport">
+        <div class="d-flex flex-column gap-3">
+
+          <!-- ROW 1: Set custom widths directly on the images -->
+          <div class="horizontal-strip-wrapper">
+            <img src="images/pre-order.jpg" class="canva-card" style="width: 280px;">
+            <img src="images/open-house.jpg" class="canva-card" style="width: 280px;">
+            <img src="images/project-retro-deck.jpg" class="canva-card" style="width: 600px;">
+            <img src="images/art.jpg" class="canva-card" style="width: 220px;">
+            <img src="images/capsule.jpg" class="canva-card" style="width: 300px;">
+            <img src="images/company-culture.jpg" class="canva-card" style="width: 600px;">
+            <img src="images/project-plan.jpg" class="canva-card" style="width: 300px;">
+            <img src="images/estate-company.jpg" class="canva-card" style="width: 650px;">
+            <img src="images/brand-positioning.jpg" class="canva-card" style="width: 600px;">
+            <img src="images/project-status-report.jpg" class="canva-card" style="width: 600px;">
+          </div>
+
+          <!-- ROW 2: Set different custom widths directly on the images -->
+          <div class="horizontal-strip-wrapper">
+            <img src="images/reconnect.jpg" class="canva-card" style="width: 200px;">
+            <img src="images/content-strategy.jpg" class="canva-card" style="width: 500x;">
+            <img src="images/handover-plan.jpg" class="canva-card" style="width: 290px;">
+            <img src="images/hiring.jpg" class="canva-card" style="width: 600px;">
+            <img src="images/business-plan.jpg" class="canva-card" style="width: 230px;">
+            <img src="images/all-new-plus.jpg" class="canva-card" style="width: 350px;">
+            <img src="images/sustainability.jpg" class="canva-card" style="width: 350px;">
+            <img src="images/new-benefit-program.jpg" class="canva-card" style="width: 600px;">
+            <img src="images/surprise-sale.jpg" class="canva-card" style="width: 350px;">
+            <img src="images/event-alert.jpg" class="canva-card" style="width: 350px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="creativity">
+    <h2 class="creative-heading">Unlock Canva's creative ecosystem</h2>
+
+    <!-- cards, grid layout -->
+    <div class="row g-2 g-lg-3">
+      <div class="col-lg-8 col-md-6">
+        <div class="card p-3 creative-card1">
+          <div class="card-body">
+            <h5 class="card-title">Get inspired, build skills and discover what you can create</h5>
+            <a href="#" class="btn btn-light tools-button">Explore Canva World Tour</a>
+          </div>
+          <img src="images/ecosystem.png" class="card-img-bottom creative-img" alt="...">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card p-3 creative-card2">
+          <div class="card-body">
+            <h5 class="card-title">Create magic with My Little Pony Designs</h5>
+            <a href="#" class="btn btn-light tools-button">Explore the collection</a>
+          </div>
+          <img src="images/pony.png" class="card-img-bottom creative-img" alt="...">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card p-2 creative-card3">
+          <div class="card-body">
+            <h5 class="card-title">End-to-end platform for large organizations</h5>
+            <a href="#" class="btn btn-light tools-button">Explore Canva Enterprise</a>
+          </div>
+          <img src="images/enterprise.png" class="card-img-bottom creative-img" alt="...">
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-6">
+        <div class="card p-3 creative-card4">
+          <div class="card-body">
+            <h5 class="card-title">Built for small businesses with big aspirations</h5>
+            <a href="#" class="btn btn-light tools-button">Explore Canva Business</a>
+          </div>
+          <img src="images/business.png" class="card-img-bottom creative-img" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="container-fluid">
+    <h2 class="cta-heading">Start designing with <img class="cta-image" src="images/Canva Wordmark.png" alt=""></h2>
+    <button class="btn btn-lg btn-light cta-btn tools-button">Get started for free</button>
+  </section>
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <img src="images/canva.svg" alt="">
+          <p class="footer-download-info">Download Canva for free</p>
+          <button class="btn btn-lg btn-dark footer-download-btn"><i class="fa-brands fa-google-play"></i>
+            Windows</button>
+          <button class="btn btn-lg btn-dark footer-download-btn"><i class="fa-brands fa-apple"></i> Mac iOS</button>
+        </div>
+
+        <div class="col-lg-2 col-md-6 fs-5 lh-1.5 d-none d-md-block">
+          <h6>Product</h6>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary text-decoration-none" href="#">Latest launches</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Visual Suite</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Canva AI</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Brand Management</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Social media</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Features</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Print</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Apps Marketplace</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Affinity ↗</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 fs-5 lh-1.5 d-none d-md-block">
+          <h6>Plans</h6>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
+          <div class="col-lg-2 col-md-6">
+            <h6>About</h6>
+            <ul class="list-unstyled">
+              <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 fs-5 lh-1.5 d-none d-md-block">
+          <h6>Community</h6>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Education</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Government</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
+          </ul>
+          <div class="col-lg-2 col-md-6">
+            <h6>Inspiration</h6>
+            <ul class="list-unstyled">
+              <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 fs-5 lh-1.5 d-none d-md-block">
+          <h6>Help</h6>
+          <ul class="list-unstyled">
+            <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+          <div class="col-lg-2 col-md-6">
+            <h6>Tools</h6>
+            <ul class="list-unstyled">
+              <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- accordion -->
+      <div class="d-block d-md-none">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Product
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="link-secondary text-decoration-none" href="#">Latest launches</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Visual Suite</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Canva AI</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Brand Management</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Social media</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Features</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Print</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Apps Marketplace</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Affinity ↗</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Plans
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Community
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Education</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Government</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Help
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+                About
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Inspiration
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Tools
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                  <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+          <span class="p-3 fs-5">
+            <i class="fa-solid fa-globe"></i>
+            <select class="footer-drop" name="language" id="">
+              <option value="English">English</option>
+              <option value="Arabic">Arabic</option>
+              <option value="Deutsche">Deutsche</option>
+              <option value="Espanol">Espanol</option>
+              <option value="Francais">Francais</option>
+              <option value="Indonesia">Indonesia</option>
+            </select>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </span>
+          <span class="justify-content-end p-3">
+            <span><a class="fs-5" href="">Privacy</a></span>
+            <span><a class="fs-5" href="">Terms</a></span>
+            <div>
+              <span class="fs-6">&copy; 2026 All Rights Reserved</span>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
