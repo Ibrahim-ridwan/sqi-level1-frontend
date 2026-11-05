@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Pin Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Recharge Card Generator</h1>
+
+    <div class="container">
+        <div class="inner-container">
+            <div class="info">
+                <label>Select Network:</label>
+                <select name="" id="network">
+                    <option value=""></option>
+                    <option value="mtn">MTN</option>
+                    <option value="glo">GLO</option>
+                    <option value="airtel">AIRTEL</option>
+                    <option value="9mobile">9MOBILE</option>
+                </select><br>
+
+                <label>Amount:</label>
+                <select name="" id="amount">
+                    <option value=""></option>
+                    <option value="100">₦100</option>
+                    <option value="200">₦200</option>
+                    <option value="500">₦500</option>
+                    <option value="1000">₦1000</option>
+                </select>
+            </div>
+
+            <div class="info">
+                <label>Pin:</label>
+                <input type="text" id="code" placeholder="Generated Pin" readonly><br>
+
+                <button class="code-btn" id="generate" onclick="generatePin()">Generate</button>
+                <button class="code-btn" id="savePin" onclick="cardDetails()">Save Pin</button>
+            </div>
+        </div>
+        <hr>
+        <div class="recharge">
+            <input type="text" placeholder="*310*Recharge Pin#" id="rechargeCode">
+            <button class="recharge-btn" id="recharge" onclick="codeValidation()">Recharge</button>
+        </div>
+    </div>
+
+    <div class="table-array">
+        <table>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Network Operator</th>
+                    <th>Amount</th>
+                    <th>Pin</th>
+                    <th>Status</th>
+                    <th>Date Created</th>
+                    <th>Date Used</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
