@@ -40,7 +40,7 @@ function cardDetails() {
     }
 
     let card = {
-        network: network.value.toUpperCase(),
+        network: network.value,
         amount: amount.value,
         pin: generatedPin.value,
         status: "Unused",
@@ -66,7 +66,7 @@ function displayCards() {
         row.innerHTML = `
             <td>${index + 1}</td>
             <td>${card.network}</td>
-            <td>₦${card.amount}</td>
+            <td>${card.amount}</td>
             <td>*310*${card.pin}#</td>
             <td>${card.status}</td>
             <td>${card.dateCreated}</td>
